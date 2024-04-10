@@ -1,0 +1,190 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Venom Research Centre</string>
+    <string name="logo_name">VRC</string>
+    <string name="map_key" translatable="false">xyz</string>
+
+
+    <string-array name="sex_array">
+        <item>male</item>
+        <item>female</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="cleaning">
+        <item>Cleaning</item>
+        <item>Yes</item>
+        <item>Yes water Change</item>
+        <item>Yes water removed</item>
+        <item>Yes water given</item>
+    </string-array>
+
+    <string-array name="venom_collection">
+        <item>Venom Collection</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Tried but not found</item>
+    </string-array>
+    <string-array name="health_status">
+        <item>Health Status</item>
+        <item>Good</item>
+        <item>Sick</item>
+        <item>Dead</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="age">
+        <item>Age</item>
+        <item>Adult</item>
+        <item>Sub-adult</item>
+        <item>Juvenile</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="mem_sts_id">
+        <item>Outsider</item>
+        <item>Member</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string name="food_offered">Food Offered</string>
+    <string name="food_items">Food Items</string>
+    <string name="food_status">Food Status</string>
+    <string name="food_weight_gm">Food Weight(gm)</string>
+    <string name="food_weight">Food Weight</string>
+    <string name="food_quantity">Food Quantity</string>
+    <string name="act_chk">Activity During Check</string>
+    <string name="exc">Excretion</string>
+    <string name="shed_sts">Shedding Status</string>
+    <string name="medi_process">Medication Process</string>
+    <string name="age_during_coll">Age During Collection</string>
+    <string name="place_collection">Place of Collection</string>
+
+    <string name="log_name">Log Name</string>
+    <string name="log_msg">Log Message</string>
+    <string name="select_time">Select Time</string>
+    <string name="welcome">Welcome</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="notice">Notice</string>
+    <string name="notice_id">Notice ID</string>
+    <string name="alert">Alert</string>
+    <string name="complete">Complete</string>
+    <string name="snake_name_">Snake Name:</string>
+    <string name="snake_id__">Snake Id: </string>
+    <string name="snake_id_">Snake ID: </string>
+    <string name="group_name_">Group Name: </string>
+    <string name="lat_">Lat: </string>
+    <string name="long_">Long: </string>
+    <string name="duration_">Duration:</string>
+    <string name="datetime_">Datetime: </string>
+    <string name="entry_datetime_">Entry Datetime: </string>
+    <string name="length_cm">Length(cm)</string>
+    <string name="head">Head</string>
+    <string name="body">Body</string>
+    <string name="tail">Tail</string>
+    <string name="total">Total</string>
+    <string name="scales">Scales</string>
+    <string name="parietal">Parietal</string>
+    <string name="frontal">Frontal</string>
+    <string name="prefrontal">Prefrontal</string>
+    <string name="loreal">Loreal</string>
+    <string name="mental">Mental</string>
+    <string name="nasal">Nasal</string>
+    <string name="internasal">Internasal</string>
+    <string name="rostral">Rostral</string>
+    <string name="temporal_f">Temporal(f)</string>
+    <string name="temporal_s">Temporal(s)</string>
+    <string name="dorsal">Dorsal</string>
+    <string name="ventral">Ventral</string>
+    <string name="anal">Anal</string>
+    <string name="sub_caudal">Sub-Caudal</string>
+    <string name="notes">Notes</string>
+    <string name="chin_sheild_A" tools:ignore="Typos">Chin-Sheild(A)</string>
+    <string name="chin_sheild_P" tools:ignore="Typos">Chin-Sheild(P)</string>
+    <string name="upper_labial">Upper Labial</string>
+    <string name="lower_labial">Lower Labial</string>
+    <string name="supra_ocular">Supra Ocular</string>
+    <string name="sub_ocular">Sub Ocular</string>
+    <string name="pre_ocular">Pre Ocular</string>
+    <string name="post_ocular">Post Ocular</string>
+    <string name="cobra">Cobra</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="numbers">Numbers</string>
+    <string name="medication">Medication</string>
+    <string name="remarks">Remarks</string>
+    <string name="cleaning">Cleaning</string>
+    <string name="venom_collection">Venom Collection</string>
+    <string name="check_member">Check Member</string>
+    <string name="snake_details">Snake Details</string>
+    <string name="today_data">Today Data</string>
+    <string name="new_add">New Add</string>
+
+    <string name="history">History</string>
+    <string name="regular">Regular</string>
+    <string name="occasional">Occasional</string>
+    <string name="weight">Weight</string>
+    <string name="subject">Subject</string>
+    <string name="sent">Sent</string>
+    <string name="create">Create</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="accessible">Accessible</string>
+    <string name="submit">Submit</string>
+    <string name="back">back</string>
+    <string name="snake_act">Snake Activity</string>
+    <string name="occ_data_display">Occasional Data Display</string>
+    <string name="reg_data_display">Regular Data Display</string>
+
+    <string name="create_pdf">Create Pdf</string>
+    <string name="category_name">Category name</string>
+    <string name="snake_id">Snake Id</string>
+    <string name="morphometry">Morphometry</string>
+    <string name="head_scalation">Head Scalation</string>
+    <string name="health_status">Health Status</string>
+    <string name="download_data">Download Data</string>
+    <string name="vrc_data_sheet"> VRC Data Sheet </string>
+
+    <string name="last_update_">Last Update:</string>
+    <string name="age">Age</string>
+    <string name="weight_gm">Weight(gm)</string>
+    <string name="date_yyyy_mm_dd">Date(yyyy-mm-dd)</string>
+    <string name="time_hh_mm">Time(hh:mm)</string>
+    <string name="dose_mg_kg">Dose(mg/kg)</string>
+
+    <string name="is_new_snake">is this new Snake?</string>
+    <string name="author_permission_mailbox">Authority Permission Mailbox</string>
+    <string name="insert_monthly_data">Insert your monthly data</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="enter_username">Enter your UserName</string>
+    <string name="enter_phn_num">Enter your phone number</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="enter_msg">Enter your message</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_confirm_password">Enter your confirm password</string>
+    <string name="enter_health_status">Enter New Health Status</string>
+    <string name="already_have_acc">Already have an Account ?</string>
+    <string name="create_new_acc">Create a new Account ?</string>
+    <string name="no_net_refresh">No Internet \n Please Refresh the page</string>
+    <string name="page_sheet_no">Page/Sheet no. </string>
+    <string name="name_medicine">Name of the medicine</string>
+    <string name="no_data_here">No Data Here</string>
+    <string name="add_new_item">Add your new item</string>
+    <string name="todo">TODO</string>
+    <string name="name">name</string>
+    <string name="search_your_category">Search your category</string>
+    <string name="search_your_new_item">Search your new item</string>
+    <string name="status">Status:</string>
+    <string name="admin">Admin</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_you_want_to_exit_from_the_app">Are you sure you want to exit from the app?</string>
+    <string name="are_you_sure_you_want_to_insert_the_data">Are you sure you want to insert the data</string>
+    <string name="title">Title</string>
+    <string name="mail">Mail</string>
+    <string name="google_map">Google Map</string>
+    <string name="data_checkout">Data Checkout</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+
+</resources>

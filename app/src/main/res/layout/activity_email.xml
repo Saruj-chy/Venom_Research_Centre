@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EmailActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/appbar"/>
+
+    <TextView
+        android:id="@+id/text_authority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/author_permission_mailbox"
+
+        android:textSize="@dimen/dimen_18"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_green"
+        android:padding="@dimen/dimen_10"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_email_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:hint="@string/enter_email"
+        app:layout_constraintTop_toBottomOf="@+id/text_authority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_subject"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/dimen_5"
+        android:hint="@string/subject"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_email_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_body"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/dimen_5"
+        android:hint="@string/enter_msg"
+        app:layout_constraintTop_toBottomOf="@+id/text_subject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:minHeight="@dimen/dimen_200"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sent"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:onClick="onEmailSent"
+        app:layout_constraintTop_toBottomOf="@+id/text_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

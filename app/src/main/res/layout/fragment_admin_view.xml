@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mix_primary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AdminViewFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/curbe_toolbar_bottom"
+        >
+        <ImageView
+            android:id="@+id/image_snake"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/logo_vrc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/constraint_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_5"
+                android:layout_weight="1"
+                app:cardElevation="@dimen/dimen_4"
+                app:cardCornerRadius="@dimen/dimen_10"
+
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const_snk_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:background="@drawable/curbe_toolbar_top"
+                    android:layout_weight="1"
+
+                    android:padding="@dimen/dimen_15"
+                    >
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="@dimen/dimen_70"
+                        android:layout_height="@dimen/dimen_70"
+                        android:src="@drawable/ic_baseline_insert_chart_outlined_24"
+                        android:layout_margin="@dimen/dimen_10"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/snake_details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_18"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        app:layout_constraintTop_toBottomOf="@+id/img"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_5"
+                app:cardElevation="@dimen/dimen_4"
+                app:cardCornerRadius="@dimen/dimen_10"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const_chk_mem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/curbe_toolbar_top"
+                    android:padding="@dimen/dimen_15"
+                    >
+                    <ImageView
+                        android:id="@+id/img_2"
+                        android:layout_width="@dimen/dimen_70"
+                        android:layout_height="@dimen/dimen_70"
+                        android:src="@drawable/ic_baseline_playlist_add_check_circle_24"
+                        android:layout_margin="@dimen/dimen_10"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_member"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/img_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:layout_constraintTop_toBottomOf="@id/linear_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_5"
+                android:layout_weight="1"
+                app:cardElevation="@dimen/dimen_4"
+                app:cardCornerRadius="@dimen/dimen_10"
+
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/curbe_toolbar_top"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dimen_15"
+                    >
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="@dimen/dimen_70"
+                        android:layout_height="@dimen/dimen_70"
+                        android:src="@drawable/ic_baseline_history"
+                        android:layout_margin="@dimen/dimen_10"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/text_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/img11"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_5"
+                app:cardElevation="@dimen/dimen_4"
+                app:cardCornerRadius="@dimen/dimen_10"
+
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const_download_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/curbe_toolbar_top"
+                    android:padding="@dimen/dimen_15"
+                    >
+                    <ImageView
+                        android:id="@+id/img_21"
+                        android:layout_width="@dimen/dimen_70"
+                        android:layout_height="@dimen/dimen_70"
+                        android:src="@drawable/ic_baseline_backup"
+                        android:layout_margin="@dimen/dimen_10"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/text_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/download_data"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/img_21"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
