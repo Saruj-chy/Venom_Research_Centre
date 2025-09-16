@@ -4,7 +4,7 @@ Venom Research Centre (VRC) Bangladesh, was established in 2018 as a project sup
 
 The project is their official project, I created a mobile application and a web application for them. All of these resources are copyrighted by Venom Research Centre.
 <br/>
-Web Link: <a href ="https://www.vrcbangladesh.org/" > vrcbangladesh.org </a>
+Webpage Link: <a href ="https://vrc.cmc.edu.bd/" > Venom Research Centre </a>
 
 # Apps Review
 
